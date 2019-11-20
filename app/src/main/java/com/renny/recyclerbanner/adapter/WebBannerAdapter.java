@@ -1,7 +1,9 @@
 package com.renny.recyclerbanner.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,18 +35,19 @@ public class WebBannerAdapter extends RecyclerView.Adapter<WebBannerAdapter.MzVi
         this.onBannerItemClickListener = onBannerItemClickListener;
     }
 
+    @NonNull
     @Override
     public WebBannerAdapter.MzViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new MzViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_image, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(WebBannerAdapter.MzViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull WebBannerAdapter.MzViewHolder holder, final int position) {
         if (urlList == null || urlList.isEmpty())
             return;
         final int P = position % urlList.size();
         String url = urlList.get(P);
-        ImageView img = (ImageView) holder.imageView;
+        ImageView img = holder.imageView;
         Glide.with(context).load(url).into(img);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +74,7 @@ public class WebBannerAdapter extends RecyclerView.Adapter<WebBannerAdapter.MzVi
 
         MzViewHolder(View itemView) {
             super(itemView);
-            imageView = (ImageView) itemView.findViewById(R.id.image);
+            imageView = itemView.findViewById(R.id.image);
         }
     }
 

@@ -1,6 +1,7 @@
 package com.renny.recyclerbanner.adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ public class LocalDataAdapter extends RecyclerView.Adapter<LocalDataAdapter.View
             R.drawable.item4, R.drawable.item5, R.drawable.item6, R.drawable.item7,
             R.drawable.item8, R.drawable.item9, R.drawable.item10};
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_image_over, parent, false));
@@ -36,7 +38,7 @@ public class LocalDataAdapter extends RecyclerView.Adapter<LocalDataAdapter.View
 
         ViewHolder(View itemView) {
             super(itemView);
-            imageView = (ImageView) itemView.findViewById(R.id.image);
+            imageView = itemView.findViewById(R.id.image);
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

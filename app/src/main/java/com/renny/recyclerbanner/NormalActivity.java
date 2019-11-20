@@ -1,7 +1,7 @@
 package com.renny.recyclerbanner;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.library.banner.RecyclerViewBannerBase;

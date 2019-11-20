@@ -5,7 +5,9 @@ package com.renny.recyclerbanner.adapter;
  */
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -30,13 +32,14 @@ public class NormalRecyclerAdapter extends RecyclerView.Adapter<NormalRecyclerAd
         this.onBannerItemClickListener = onBannerItemClickListener;
     }
 
+    @NonNull
     @Override
-    public NormalRecyclerAdapter.NormalHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public NormalRecyclerAdapter.NormalHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new NormalHolder(new ImageView(context));
     }
 
     @Override
-    public void onBindViewHolder(NormalHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull NormalHolder holder, final int position) {
         if (urlList == null || urlList.isEmpty())
             return;
         String url = urlList.get(position % urlList.size());

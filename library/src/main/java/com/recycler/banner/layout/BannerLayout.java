@@ -1,4 +1,4 @@
-package com.recycler.banner.banner;
+package com.recycler.banner.layout;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -24,8 +24,8 @@ import androidx.recyclerview.widget.OrientationHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.recycler.banner.R;
-import com.recycler.banner.banner.layoutmanager.CenterSnapHelper;
-import com.recycler.banner.banner.layoutmanager.BannerLayoutManager;
+import com.recycler.banner.layout.layoutmanager.CenterSnapHelper;
+import com.recycler.banner.layout.layoutmanager.BannerLayoutManager;
 
 import static android.widget.AbsListView.OnScrollListener.SCROLL_STATE_IDLE;
 

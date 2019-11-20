@@ -8,8 +8,8 @@ import android.util.Log;
 import android.widget.SeekBar;
 
 import com.renny.recyclerbanner.adapter.LocalDataAdapter;
-import com.recycler.banner.banner.layoutmanager.CenterScrollListener;
-import com.recycler.banner.banner.layoutmanager.OverFlyingLayoutManager;
+import com.recycler.banner.layout.layoutmanager.CenterScrollListener;
+import com.recycler.banner.layout.layoutmanager.OverFlyingLayoutManager;
 
 //未封装版
 public class OverFlyingActivity extends AppCompatActivity {

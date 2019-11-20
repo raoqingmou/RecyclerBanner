@@ -1,4 +1,4 @@
-package com.recycler.banner.banner;
+package com.recycler.banner.layout;
 
 import android.content.Context;
 import android.content.res.Resources;

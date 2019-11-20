@@ -1,4 +1,4 @@
-package com.recycler.banner.banner.layoutmanager;
+package com.recycler.banner.layout.layoutmanager;
 
 import androidx.recyclerview.widget.RecyclerView;
 

@@ -1,4 +1,4 @@
-package com.recycler.banner.banner.layoutmanager;
+package com.recycler.banner.layout.layoutmanager;
 
 import android.content.Context;
 import android.os.Parcel;

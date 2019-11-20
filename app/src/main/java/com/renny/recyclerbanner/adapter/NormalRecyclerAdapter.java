@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.recycler.banner.banner.RecyclerViewBannerBase;
+import com.recycler.banner.layout.RecyclerViewBannerBase;
 
 import java.util.List;
 

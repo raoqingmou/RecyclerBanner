@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.library.banner.BannerLayout;
+import com.recycler.banner.banner.BannerLayout;
 import com.renny.recyclerbanner.adapter.WebBannerAdapter;
 
 import java.util.ArrayList;

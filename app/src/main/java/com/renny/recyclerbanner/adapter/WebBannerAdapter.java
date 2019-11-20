@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.example.library.banner.BannerLayout;
+import com.recycler.banner.banner.BannerLayout;
 import com.renny.recyclerbanner.R;
 
 import java.util.List;

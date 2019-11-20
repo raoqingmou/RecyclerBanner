@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
-import com.example.library.banner.RecyclerViewBannerBase;
+import com.recycler.banner.banner.RecyclerViewBannerBase;
 import com.renny.recyclerbanner.adapter.NormalRecyclerAdapter;
 
 import java.util.List;
